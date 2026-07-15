@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Bridge Consultancy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-envelope"></i> info@successbridgeconsultancy.com</span>
+                <span><i class="fas fa-phone"></i> +255 000 000 000</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+            <div class="logo">
+                <img src="logo-placeholder.png" alt="Success Bridge Consultancy" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-main">Success Bridge</span>
+                    <span class="logo-sub">Consultancy</span>
+                </div>
+            </div>
+            <ul class="nav-links nav-right">
+                <li><a href="apply.html">Apply Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="apply.html" class="nav-btn">Get Started</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO CAROUSEL -->
+    <section class="hero-slider">
+        <div class="slides">
+
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600')">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1>Your Bridge to <span class="gold">Global Education</span></h1>
+                    <p>We help Tanzanian students achieve their dreams of studying abroad with expert guidance every step of the way.</p>
+                    <div class="slide-buttons">
+                        <a href="apply.html" class="btn-primary">Apply Now</a>
+                        <a href="services.html" class="btn-outline">Our Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600')">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1>Expert <span class="gold">Visa Assistance</span></h1>
+                    <p>Our experienced team guides you through every step of the visa application process with confidence and ease.</p>
+                    <div class="slide-buttons">
+                        <a href="apply.html" class="btn-primary">Start Today</a>
+                        <a href="about.html" class="btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=1600')">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1>Unlock Your <span class="gold">Potential Abroad</span></h1>
+                    <p>Join hundreds of successful Tanzanian students who have transformed their lives through international education.</p>
+                    <div class="slide-buttons">
+                        <a href="apply.html" class="btn-primary">Join Us</a>
+                        <a href="contact.html" class="btn-outline">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+
+        <!-- Slider Dots -->
+        <div class="slider-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- WELCOME SECTION -->
+    <section class="welcome">
+        <div class="welcome-container">
+            <div class="welcome-text">
+                <h4 class="section-tag">Welcome to Success Bridge</h4>
+                <h2>We Are Your Trusted <span class="gold">Study Abroad</span> Partner</h2>
+                <p>Success Bridge Consultancy is a leading education consultancy based in Dar es Salaam, Tanzania. We specialize in helping students navigate the complex process of applying to universities abroad, obtaining student visas, and preparing for life in a new country.</p>
+                <p>Our dedicated team brings years of experience and a genuine passion for helping Tanzanian students achieve their international education dreams.</p>
+                <a href="about.html" class="btn-primary">Read More About Us</a>
+            </div>
+            <div class="welcome-image">
+               <img src="https://www.collegeatlas.org/wp-content/uploads/2017/02/historically-black-colleges-and-university-students.jpg" alt="Students studying">
+                <!--<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" alt="Students studying">-->
+                <div class="experience-badge">
+                    <h3>100%</h3>
+                    <p>Dedicated to Your Success</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services">
+        <div class="section-header">
+            <h4 class="section-tag">What We Offer</h4>
+            <h2>Our <span class="gold">Services</span></h2>
+            <p>Everything you need to study abroad successfully</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600" alt="University Applications">
+                    <div class="service-overlay">
+                        <a href="services.html" class="service-link"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+                <div class="service-body">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>University Applications</h3>
+                    <p>We help you find and apply to the best universities that match your goals and qualifications worldwide.</p>
+                    <a href="services.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1569701813229-33284b643e3c?w=600" alt="Visa Assistance">
+                    <div class="service-overlay">
+                        <a href="services.html" class="service-link"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+                <div class="service-body">
+                    <i class="fas fa-passport"></i>
+                    <h3>Visa Assistance</h3>
+                    <p>Our experts guide you through the entire visa application process with confidence and professionalism.</p>
+                    <a href="services.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1504275107627-0c2ba7a43dba?w=600" alt="Scholarship Guidance">
+                    <div class="service-overlay">
+                        <a href="services.html" class="service-link"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+                <div class="service-body">
+                    <i class="fas fa-award"></i>
+                    <h3>Scholarship Guidance</h3>
+                    <p>We help you discover and apply for scholarships to fully or partially fund your education abroad.</p>
+                    <a href="services.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=600" alt="Pre Departure">
+                    <div class="service-overlay">
+                        <a href="services.html" class="service-link"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+                <div class="service-body">
+                    <i class="fas fa-plane"></i>
+                    <h3>Pre-Departure Support</h3>
+                    <p>From accommodation to travel arrangements — we prepare you fully for life in your new country.</p>
+                    <a href="services.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <a href="services.html" class="btn-outline-dark">View All Services</a>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1600')">
+        <div class="stats-overlay"></div>
+        <div class="stats-container">
+            <div class="stat-item">
+                <i class="fas fa-user-graduate"></i>
+                <h2 class="counter" data-target="500">0</h2>
+                <p>Students Helped</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-university"></i>
+                <h2 class="counter" data-target="50">0</h2>
+                <p>Partner Universities</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-globe"></i>
+                <h2 class="counter" data-target="15">0</h2>
+                <p>Countries</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-smile"></i>
+                <h2 class="counter" data-target="98">0</h2>
+                <p>Success Rate %</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-us">
+        <div class="section-header">
+            <h4 class="section-tag">Why Us</h4>
+            <h2>Why Choose <span class="gold">Success Bridge?</span></h2>
+            <p>We are committed to making your study abroad journey smooth and successful</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>Experienced Team</h3>
+                <p>Our team has years of experience helping Tanzanian students study abroad successfully.</p>
+            </div>
+            <div class="why-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Personalized Support</h3>
+                <p>We treat every student as an individual and tailor our services to your specific needs.</p>
+            </div>
+            <div class="why-card">
+                <i class="fas fa-globe"></i>
+                <h3>Global Network</h3>
+                <p>Strong partnerships with universities and institutions around the world.</p>
+            </div>
+            <div class="why-card">
+                <i class="fas fa-clock"></i>
+                <h3>Always Available</h3>
+                <p>Our team is always available to answer your questions and provide guidance whenever you need it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Subscribe to Our <span class="gold">Newsletter</span></h2>
+            <p>Get the latest updates on scholarships, universities, and study abroad opportunities</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter Your Email Address">
+                <!-- <button class="btn-primary">Subscribe</button> -->
+                 <button class="btn-primary" onclick="subscribeNewsletter(this)">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-main">Success Bridge</span>
+                    <span class="logo-sub">Consultancy</span>
+                </div>
+                <p>Your trusted partner for studying abroad from Tanzania. We bridge the gap between your dreams and global education.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="apply.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> University Applications</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Visa Assistance</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Scholarship Guidance</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Pre-Departure Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Dar es Salaam, Tanzania</p>
+                <p><i class="fas fa-phone"></i> +255 000 000 000</p>
+                <p><i class="fas fa-envelope"></i> info@successbridgeconsultancy.com</p>
+                <p><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Success Bridge Consultancy. All Rights Reserved. | Dar es Salaam, Tanzania</p>
+        </div>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+     <script type="module" src="newsletter-firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

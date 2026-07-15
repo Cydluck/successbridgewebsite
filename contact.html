@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Success Bridge Consultancy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-envelope"></i> info@successbridgeconsultancy.com</span>
+                <span><i class="fas fa-phone"></i> +255 000 000 000</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+            <div class="logo">
+                <div class="logo-text">
+                    <span class="logo-main">Success Bridge</span>
+                    <span class="logo-sub">Consultancy</span>
+                </div>
+            </div>
+            <ul class="nav-links nav-right">
+                <li><a href="apply.html">Apply Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="apply.html" class="nav-btn">Get Started</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600')">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Contact <span class="gold">Us</span></h1>
+            <p>We'd love to hear from you — get in touch today</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Contact Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO CARDS -->
+    <section class="contact-cards">
+        <div class="contact-cards-container">
+            <div class="contact-card">
+                <div class="contact-card-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Visit Us</h3>
+                <p>Dar es Salaam, Tanzania</p>
+                <p>Come visit our office during working hours</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-card-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3>Call Us</h3>
+                <p>+255 000 000 000</p>
+                <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-card-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p>info@successbridgeconsultancy.com</p>
+                <p>We reply within 24 hours</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-card-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>WhatsApp</h3>
+                <p>+255 000 000 000</p>
+                <p>Chat with us anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & MAP -->
+    <section class="contact-section">
+        <div class="contact-container">
+
+            <!-- CONTACT FORM -->
+            <div class="contact-form-container">
+                <h4 class="section-tag">Send A Message</h4>
+                <h2>Get In <span class="gold">Touch</span></h2>
+                <p>Have a question or want to learn more about our services? Send us a message and we'll get back to you as soon as possible.</p>
+
+                <div class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Your Name *</label>
+                            <input type="text" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="+255 000 000 000">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject *</label>
+                            <select>
+                                <option value="">Select Subject</option>
+                                <option>University Applications</option>
+                                <option>Visa Assistance</option>
+                                <option>Scholarship Guidance</option>
+                                <option>Pre-Departure Support</option>
+                                <option>General Inquiry</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group full">
+                        <label>Your Message *</label>
+                        <textarea placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button class="btn-submit" onclick="sendMessage()">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </div>
+            </div>
+
+            <!-- SIDE INFO -->
+            <div class="contact-side">
+                <div class="contact-side-card">
+                    <h3>Office Hours</h3>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span>Monday - Friday</span>
+                            <span class="gold">8:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Saturday</span>
+                            <span class="gold">9:00 AM - 2:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Sunday</span>
+                            <span style="color: #e53935;">Closed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-side-card">
+                    <h3>Follow Us</h3>
+                    <p>Stay updated with the latest scholarship and study abroad opportunities.</p>
+                    <div class="social-follow">
+                        <a href="#" class="social-follow-btn facebook">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                        <a href="#" class="social-follow-btn instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="#" class="social-follow-btn whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="#" class="social-follow-btn linkedin">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-side-card cta-card">
+                    <h3>Ready to Apply?</h3>
+                    <p>Don't wait — start your international education journey today!</p>
+                    <a href="apply.html" class="btn-primary">Apply Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.46266282!2d39.0!3d-6.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4bae169bd6f1%3A0x940f6b26a086a1a7!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2s!4v1234567890"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Subscribe to Our <span class="gold">Newsletter</span></h2>
+            <p>Get the latest updates on scholarships, universities, and study abroad opportunities</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter Your Email Address">
+                <!--<button class="btn-primary">Subscribe</button> -->
+                <button class="btn-primary" onclick="subscribeNewsletter(this)">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-main">Success Bridge</span>
+                    <span class="logo-sub">Consultancy</span>
+                </div>
+                <p>Your trusted partner for studying abroad from Tanzania. We bridge the gap between your dreams and global education.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="apply.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> University Applications</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Visa Assistance</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Scholarship Guidance</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Pre-Departure Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Dar es Salaam, Tanzania</p>
+                <p><i class="fas fa-phone"></i> +255 000 000 000</p>
+                <p><i class="fas fa-envelope"></i> info@successbridgeconsultancy.com</p>
+                <p><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Success Bridge Consultancy. All Rights Reserved. | Dar es Salaam, Tanzania</p>
+        </div>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+     <script type="module" src="newsletter-firebase.js"></script>
+     <script type="module" src="contact-firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

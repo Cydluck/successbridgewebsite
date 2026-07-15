@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now - Success Bridge Consultancy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-envelope"></i> info@successbridgeconsultancy.com</span>
+                <span><i class="fas fa-phone"></i> +255 000 000 000</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+            <div class="logo">
+                <div class="logo-text">
+                    <span class="logo-main">Success Bridge</span>
+                    <span class="logo-sub">Consultancy</span>
+                </div>
+            </div>
+            <ul class="nav-links nav-right">
+                <li><a href="apply.html">Apply Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="apply.html" class="nav-btn">Get Started</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600')">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Apply <span class="gold">Now</span></h1>
+            <p>Start your journey to international education today</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Apply Now</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- APPLICATION SECTION -->
+    <section class="application-section">
+        <div class="application-container">
+
+            <!-- LEFT SIDE INFO -->
+            <div class="application-info">
+                <h4 class="section-tag">Get Started</h4>
+                <h2>Begin Your <span class="gold">Application</span></h2>
+                <p>Fill in the form and one of our consultants will contact you within 24 hours to discuss your study abroad options.</p>
+
+                <div class="info-steps">
+                    <div class="info-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Fill The Form</h3>
+                            <p>Complete the registration form with your personal and academic details.</p>
+                        </div>
+                    </div>
+                    <div class="info-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Consultation</h3>
+                            <p>Meet with our expert consultants to discuss your goals and best options.</p>
+                        </div>
+                    </div>
+                    <div class="info-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Application</h3>
+                            <p>We help you apply to your chosen universities with all required documents.</p>
+                        </div>
+                    </div>
+                    <div class="info-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Fly Abroad!</h3>
+                            <p>Get your visa, pack your bags and begin your international education journey!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-quick">
+                    <p><i class="fas fa-phone"></i> +255 000 000 000</p>
+                    <p><i class="fas fa-envelope"></i> info@successbridgeconsultancy.com</p>
+                    <p><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE FORM -->
+            <div class="application-form-container">
+                <h3>Student Registration Form</h3>
+                <p>All fields marked with * are required</p>
+
+                <div class="application-form">
+
+                    <div class="form-section-title">Personal Information</div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name *</label>
+                            <input type="text" placeholder="Enter your first name">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name *</label>
+                            <input type="text" placeholder="Enter your last name">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" placeholder="+255 000 000 000">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Date of Birth *</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group">
+                            <label>Gender *</label>
+                            <select>
+                                <option value="">Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Home Address *</label>
+                        <input type="text" placeholder="Enter your home address in Tanzania">
+                    </div>
+
+                    <div class="form-section-title">Academic Information</div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Highest Education Level *</label>
+                            <select>
+                                <option value="">Select Level</option>
+                                <option>Secondary School (Form 4)</option>
+                                <option>Advanced Level (Form 6)</option>
+                                <option>Diploma</option>
+                                <option>Bachelor's Degree</option>
+                                <option>Master's Degree</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Current/Last Institution *</label>
+                            <input type="text" placeholder="School or University name">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Year of Graduation *</label>
+                            <input type="text" placeholder="e.g. 2024">
+                        </div>
+                        <div class="form-group">
+                            <label>English Proficiency</label>
+                            <select>
+                                <option value="">Select Level</option>
+                                <option>Basic</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+                                <option>IELTS/TOEFL certified</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-section-title">Study Abroad Preferences</div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Preferred Country *</label>
+                            <select>
+                                <option value="">Select Country</option>
+                                <option>United Kingdom</option>
+                                <option>United States</option>
+                                <option>Canada</option>
+                                <option>Australia</option>
+                                <option>Germany</option>
+                                <option>UAE</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Course/Field *</label>
+                            <input type="text" placeholder="e.g. Computer Science, Business">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Intended Start Date</label>
+                            <select>
+                                <option value="">Select Period</option>
+                                <option>January 2025</option>
+                                <option>September 2025</option>
+                                <option>January 2026</option>
+                                <option>September 2026</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Services Needed</label>
+                            <select>
+                                <option value="">Select Service</option>
+                                <option>University Application Only</option>
+                                <option>Visa Assistance Only</option>
+                                <option>Scholarship Guidance</option>
+                                <option>Full Package (All Services)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Additional Information</label>
+                        <textarea placeholder="Tell us anything else we should know about you, your goals, or any specific requirements..."></textarea>
+                    </div>
+
+                    <div class="form-group full">
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span>I agree to the terms and conditions and consent to being contacted by Success Bridge Consultancy regarding my application.</span>
+                        </label>
+                    </div>
+
+                    <button class="btn-submit" onclick="submitForm()">
+                        <i class="fas fa-paper-plane"></i> Submit Application
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Subscribe to Our <span class="gold">Newsletter</span></h2>
+            <p>Get the latest updates on scholarships, universities, and study abroad opportunities</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter Your Email Address">
+                <!-- <button class="btn-primary">Subscribe</button> -->
+                 <button class="btn-primary" onclick="subscribeNewsletter(this)">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-main">Success Bridge</span>
+                    <span class="logo-sub">Consultancy</span>
+                </div>
+                <p>Your trusted partner for studying abroad from Tanzania. We bridge the gap between your dreams and global education.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="apply.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> University Applications</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Visa Assistance</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Scholarship Guidance</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Pre-Departure Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Dar es Salaam, Tanzania</p>
+                <p><i class="fas fa-phone"></i> +255 000 000 000</p>
+                <p><i class="fas fa-envelope"></i> info@successbridgeconsultancy.com</p>
+                <p><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Success Bridge Consultancy. All Rights Reserved. | Dar es Salaam, Tanzania</p>
+        </div>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+     <script type="module" src="newsletter-firebase.js"></script>
+     <script type="module" src="apply-firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
