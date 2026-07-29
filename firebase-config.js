@@ -4,9 +4,9 @@ import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.c
 
 const firebaseConfig = {
   apiKey: "AIzaSyBHcCafvyvC8lLq3EkpMH7UgY9-DCNmxuI",
-  authDomain: "successbridgeconsultancy.firebaseapp.com",
-  projectId: "successbridgeconsultancy",
-  storageBucket: "successbridgeconsultancy.firebasestorage.app",
+  authDomain: "stratebridgeconsultancy.firebaseapp.com",
+  projectId: "stratebridgeconsultancy",
+  storageBucket: "stratebridgeconsultancy.firebasestorage.app",
   messagingSenderId: "382979058201",
   appId: "1:382979058201:web:d991533b1f727fd7839888"
 };
